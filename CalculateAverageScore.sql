@@ -8,3 +8,4 @@ select project_id, avg(score) as average_score from project_data
 group by project_id 
 having count(distinct team_member_id) > 1;
 
+-- Having must require group by clause for it to know what it is filtering in group of rows 
